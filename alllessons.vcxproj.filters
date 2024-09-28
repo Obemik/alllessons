@@ -1,17 +1,52 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
+    <Filter Include="core">
+      <UniqueIdentifier>{e15daea8-3b7e-43e0-9ace-986989796520}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="queue">
+      <UniqueIdentifier>{0abc653d-92bd-4929-bf07-b679f32526c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="human">
+      <UniqueIdentifier>{9fe968b1-8247-4294-afd8-8bdf9bf7dce1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="overload">
+      <UniqueIdentifier>{dae184f1-1e37-48b9-9e5c-7450be97a87a}</UniqueIdentifier>
     </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="queue.cpp">
+      <Filter>queue</Filter>
+    </ClCompile>
+    <ClCompile Include="human.cpp">
+      <Filter>human</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="const.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="libs.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="logger.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="queue.h">
+      <Filter>queue</Filter>
+    </ClInclude>
+    <ClInclude Include="human.h">
+      <Filter>human</Filter>
+    </ClInclude>
+    <ClInclude Include="overloaded_operators.h">
+      <Filter>overload</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
